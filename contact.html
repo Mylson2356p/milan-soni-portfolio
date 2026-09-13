@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Milan Soni</title>
+    <meta name="description" content="Milan Soni — AI/ML Engineering Student & Developer">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans">
+<header class="sticky top-0 z-50 border-b border-slate-800/80 bg-[#0d1117]/95 backdrop-blur-md">
+    <nav class="max-w-6xl mx-auto px-5 lg:px-8 h-16 flex items-center justify-between">
+        <a href="index.html" class="text-lg font-bold tracking-tight">
+            Milan Soni<span class="accent">.</span>
+        </a>
+
+        <div class="hidden md:flex items-center gap-8 text-slate-400">
+            <a href="index.html" class="nav-link  hover:text-white text-sm transition-colors">Home</a><a href="about.html" class="nav-link  hover:text-white text-sm transition-colors">About</a><a href="projects.html" class="nav-link  hover:text-white text-sm transition-colors">Projects</a><a href="contact.html" class="nav-link active hover:text-white text-sm transition-colors">Contact</a>
+        </div>
+
+        <button id="menuButton" class="md:hidden p-2 text-slate-300"
+                aria-label="Open navigation menu" aria-expanded="false">
+            <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                <path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+        </button>
+    </nav>
+
+    <div id="mobileMenu" class="hidden md:hidden border-t border-slate-800/80 bg-[#0d1117]">
+        <div class="max-w-6xl mx-auto px-5 py-5 flex flex-col gap-4 text-sm text-slate-400">
+            <a href="index.html" class="mobile-link  hover:text-white transition-colors">Home</a><a href="about.html" class="mobile-link  hover:text-white transition-colors">About</a><a href="projects.html" class="mobile-link  hover:text-white transition-colors">Projects</a><a href="contact.html" class="mobile-link text-white hover:text-white transition-colors">Contact</a>
+        </div>
+    </div>
+</header>
+
+<main>
+<section class="py-20 md:py-28 min-h-[calc(100vh-128px)]">
+    <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
+
+        <div class="space-y-2 mb-12 text-center md:text-left">
+            <p class="section-label">Get In Touch</p>
+            <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">
+                Let's Connect & Collaborate
+            </h1>
+            <p class="text-sm sm:text-base text-slate-400 max-w-xl mt-3 leading-6">
+                Feel free to reach out for website projects, learning discussions,
+                or just to connect.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+
+            <!-- WhatsApp Featured Card -->
+            <div class="lg:col-span-6 p-6 sm:p-8 rounded-2xl
+                        bg-[#151b20] border border-emerald-500/25
+                        flex flex-col justify-between space-y-8">
+
+                <div class="space-y-4">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full
+                                bg-emerald-500/10 text-emerald-400
+                                border border-emerald-500/20 text-xs font-medium">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                        Direct Client Contact
+                    </div>
+
+                    <h2 class="text-2xl font-bold">Message Me on WhatsApp</h2>
+
+                    <p class="text-sm text-slate-400 leading-6">
+                        Interested in discussing a website project or collaborating?
+                        Send a direct message and let's talk.
+                    </p>
+                </div>
+
+                <div>
+                    <!-- Replace YOUR_WHATSAPP_NUMBER_HERE with country-code number -->
+                    <a href="https://wa.me/YOUR_WHATSAPP_NUMBER_HERE?text=Hi%20Milan%2C%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20website%20project."
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="inline-flex items-center justify-center gap-2 w-full sm:w-auto
+                              px-6 py-3.5 rounded-xl bg-emerald-600
+                              hover:bg-emerald-500 text-white font-semibold text-sm
+                              transition-all hover:-translate-y-0.5">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.071.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/>
+                        </svg>
+                        Chat on WhatsApp
+                    </a>
+
+                    <p class="text-xs text-slate-600 mt-3">
+                        Pre-filled message included
+                    </p>
+                </div>
+            </div>
+
+            <!-- Email & Social Grid -->
+            <div class="lg:col-span-6 space-y-4">
+
+                <!-- Email -->
+                <a href="mailto:YOUR_EMAIL_HERE"
+                   class="group p-4 rounded-xl bg-[#151b23] border border-slate-800
+                          hover:border-slate-700 flex items-center justify-between transition-all">
+                    <div class="flex items-center gap-3.5">
+                        <div class="w-10 h-10 rounded-lg bg-sky-500/10 text-sky-400
+                                    flex items-center justify-center">
+                            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                                 stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="text-xs text-slate-500">EMAIL ME</div>
+                            <div class="text-sm font-medium text-white mt-1">
+                                YOUR_EMAIL_HERE
+                            </div>
+                        </div>
+                    </div>
+                    <span class="text-slate-500 group-hover:text-sky-400">→</span>
+                </a>
+
+                <div class="grid grid-cols-2 gap-3 pt-1">
+
+                    <a href="YOUR_GITHUB_URL_HERE" target="_blank" rel="noopener noreferrer"
+                       class="p-4 rounded-xl bg-[#151b23] border border-slate-800
+                              hover:border-slate-700 flex items-center gap-3 text-slate-200 transition-all">
+                        <span class="text-sm font-semibold">GitHub</span>
+                        <span class="ml-auto text-slate-600">↗</span>
+                    </a>
+
+                    <a href="YOUR_LINKEDIN_URL_HERE" target="_blank" rel="noopener noreferrer"
+                       class="p-4 rounded-xl bg-[#151b23] border border-slate-800
+                              hover:border-slate-700 flex items-center gap-3 text-slate-200 transition-all">
+                        <span class="text-sm font-semibold">LinkedIn</span>
+                        <span class="ml-auto text-slate-600">↗</span>
+                    </a>
+
+                    <a href="YOUR_LEETCODE_URL_HERE" target="_blank" rel="noopener noreferrer"
+                       class="p-4 rounded-xl bg-[#151b23] border border-slate-800
+                              hover:border-slate-700 flex items-center gap-3 text-slate-200 transition-all">
+                        <span class="text-sm font-semibold">LeetCode</span>
+                        <span class="ml-auto text-slate-600">↗</span>
+                    </a>
+
+                    <a href="YOUR_INSTAGRAM_URL_HERE" target="_blank" rel="noopener noreferrer"
+                       class="p-4 rounded-xl bg-[#151b23] border border-slate-800
+                              hover:border-slate-700 flex items-center gap-3 text-slate-200 transition-all">
+                        <span class="text-sm font-semibold">Instagram</span>
+                        <span class="ml-auto text-slate-600">↗</span>
+                    </a>
+
+                </div>
+
+                <div class="card rounded-xl p-5 mt-4">
+                    <p class="text-xs text-slate-500 uppercase tracking-wider">
+                        Phone
+                    </p>
+                    <a href="tel:YOUR_PHONE_NUMBER_HERE"
+                       class="text-slate-200 mt-2 inline-block hover:text-sky-400">
+                        YOUR_PHONE_NUMBER_HERE
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer class="border-t border-slate-800/80">
+    <div class="max-w-6xl mx-auto px-5 lg:px-8 py-7 flex flex-col sm:flex-row
+                items-center justify-between gap-3">
+        <p class="text-sm text-slate-500">
+            © <span id="year"></span> Milan Soni.
+        </p>
+        <p class="text-sm text-slate-600">
+            Built with HTML, Tailwind CSS & JavaScript.
+        </p>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+
+:root {
+    --bg: #0d1117;
+    --surface: #151b23;
+    --surface-2: #11161d;
+    --border: #26313d;
+    --text: #f1f5f9;
+    --muted: #94a3b8;
+    --accent: #5ba8d8;
+    --accent-soft: rgba(91, 168, 216, 0.12);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+}
+
+::selection {
+    background: rgba(91,168,216,.3);
+    color: white;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 0;
+    height: 2px;
+    background: var(--accent);
+    transition: width .22s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+.card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    transition: border-color .22s ease, transform .22s ease;
+}
+
+.card:hover {
+    border-color: rgba(91,168,216,.4);
+    transform: translateY(-2px);
+}
+
+.hero-grid {
+    background-image:
+        linear-gradient(rgba(255,255,255,.022) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.022) 1px, transparent 1px);
+    background-size: 48px 48px;
+}
+
+.accent { color: var(--accent); }
+
+.btn-primary {
+    background: var(--text);
+    color: var(--bg);
+    transition: all .2s ease;
+}
+
+.btn-primary:hover {
+    background: #dbe4ec;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    border: 1px solid var(--border);
+    transition: all .2s ease;
+}
+
+.btn-secondary:hover {
+    border-color: rgba(91,168,216,.5);
+    color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.section-label {
+    color: var(--accent);
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+}
+
+input, textarea {
+    outline: none;
+}
+
+@media (max-width: 767px) {
+    .nav-link::after { display: none; }
+}

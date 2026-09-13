@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Milan Soni</title>
+    <meta name="description" content="Milan Soni — AI/ML Engineering Student & Developer">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans">
+<header class="sticky top-0 z-50 border-b border-slate-800/80 bg-[#0d1117]/95 backdrop-blur-md">
+    <nav class="max-w-6xl mx-auto px-5 lg:px-8 h-16 flex items-center justify-between">
+        <a href="index.html" class="text-lg font-bold tracking-tight">
+            Milan Soni<span class="accent">.</span>
+        </a>
+
+        <div class="hidden md:flex items-center gap-8 text-slate-400">
+            <a href="index.html" class="nav-link  hover:text-white text-sm transition-colors">Home</a><a href="about.html" class="nav-link  hover:text-white text-sm transition-colors">About</a><a href="projects.html" class="nav-link active hover:text-white text-sm transition-colors">Projects</a><a href="contact.html" class="nav-link  hover:text-white text-sm transition-colors">Contact</a>
+        </div>
+
+        <button id="menuButton" class="md:hidden p-2 text-slate-300"
+                aria-label="Open navigation menu" aria-expanded="false">
+            <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                <path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+        </button>
+    </nav>
+
+    <div id="mobileMenu" class="hidden md:hidden border-t border-slate-800/80 bg-[#0d1117]">
+        <div class="max-w-6xl mx-auto px-5 py-5 flex flex-col gap-4 text-sm text-slate-400">
+            <a href="index.html" class="mobile-link  hover:text-white transition-colors">Home</a><a href="about.html" class="mobile-link  hover:text-white transition-colors">About</a><a href="projects.html" class="mobile-link text-white hover:text-white transition-colors">Projects</a><a href="contact.html" class="mobile-link  hover:text-white transition-colors">Contact</a>
+        </div>
+    </div>
+</header>
+
+<main>
+<section class="py-20 md:py-28 min-h-[calc(100vh-128px)]">
+    <div class="max-w-6xl mx-auto px-5 lg:px-8">
+
+        <div class="max-w-2xl mb-12">
+            <p class="section-label mb-3">Projects</p>
+            <h1 class="text-4xl sm:text-5xl font-bold tracking-tight">
+                Things I'm building.
+            </h1>
+            <p class="text-slate-400 mt-5 leading-7">
+                Real projects will be added here as I build and complete them.
+            </p>
+        </div>
+
+        <div class="border border-dashed border-slate-700 rounded-2xl p-10 sm:p-20 text-center bg-slate-900/30">
+            <div class="mx-auto w-14 h-14 rounded-xl border border-slate-700
+                        flex items-center justify-center text-slate-500 mb-6">
+                <svg width="25" height="25" fill="none" viewBox="0 0 24 24"
+                     stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M4 7h5l2 2h9v10H4V7Z"/>
+                    <path stroke-linecap="round" d="M4 7V5h6l2 2"/>
+                </svg>
+            </div>
+
+            <h2 class="text-2xl font-semibold">Projects coming soon</h2>
+
+            <p class="text-slate-500 max-w-lg mx-auto mt-3 leading-7">
+                I'm currently working on projects that I can confidently showcase.
+                This section will be updated with real work, screenshots, tech stacks,
+                live demos, and GitHub repositories.
+            </p>
+
+            <a href="contact.html"
+               class="inline-flex mt-8 px-5 py-3 rounded-lg btn-secondary font-medium">
+                Get In Touch
+            </a>
+        </div>
+
+        <!--
+        PROJECT TEMPLATE FOR LATER:
+
+        <article class="card rounded-2xl overflow-hidden">
+            <img src="project-image.jpg" alt="Project screenshot"
+                 class="w-full">
+            <div class="p-6">
+                <h2>Project Name</h2>
+                <p>Project description.</p>
+                <p>HTML · CSS · JavaScript</p>
+                <a href="LIVE_DEMO_URL">Live Demo</a>
+                <a href="GITHUB_URL">GitHub</a>
+            </div>
+        </article>
+        -->
+
+    </div>
+</section>
+</main>
+
+<footer class="border-t border-slate-800/80">
+    <div class="max-w-6xl mx-auto px-5 lg:px-8 py-7 flex flex-col sm:flex-row
+                items-center justify-between gap-3">
+        <p class="text-sm text-slate-500">
+            © <span id="year"></span> Milan Soni.
+        </p>
+        <p class="text-sm text-slate-600">
+            Built with HTML, Tailwind CSS & JavaScript.
+        </p>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
